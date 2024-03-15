@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--*******************************************************************************************-->
+    <script src="cookiefunctions.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!--*******************************************************************************************-->
+  </head>
+  <body style="background-color: darkslategray">
+    <!--*******************************************************************************************-->
+    <div id="cookieMessage">
+      <div id="c-container">
+        <div id="c-subcontainer">
+          <div id="c-message">
+            <p>
+              Wir benutzen Cookies um die bestmögliche Leistung dieser Website
+              zu erreichen. <a href=""> Mehr Info.</a>
+            </p>
+            <button id="cookie-btn-true" class="cbtn">Akzeptieren</button>
+            <button id="cookie-btn-false" class="cbtn">Ablehnen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener("load", cookieMessage);
+
+      document
+        .querySelector("#cookie-btn-true")
+        .addEventListener("click", function () {
+          cookieButton(true);
+        });
+      document
+        .querySelector("#cookie-btn-false")
+        .addEventListener("click", function () {
+          cookieButton(false);
+        });
+    </script>
+
+    <!--*******************************************************************************************-->
+  </body>
+</html>
